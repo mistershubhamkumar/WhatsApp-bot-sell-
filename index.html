@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Bot - Sell Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #25d366, #128c7e, #34b7f1, #dcf8c6);
+      animation: gradientBG 10s ease infinite;
+      background-size: 400% 400%;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50% }
+      50% { background-position: 100% 50% }
+      100% { background-position: 0% 50% }
+    }
+    .card { transition: transform 0.3s ease; }
+    .card:hover { transform: translateY(-6px); }
+    .hidden-section { display: none; }
+
+    /* WhatsApp logo animation */
+    .logo-anim {
+      width: 100px;
+      animation: bounce 2s infinite, glow 2s infinite alternate;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    @keyframes glow {
+      from { filter: drop-shadow(0 0 6px #25d366); }
+      to { filter: drop-shadow(0 0 15px #25d366); }
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="text-center py-10">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         alt="WhatsApp Logo" class="logo-anim mx-auto mb-4">
+    <h1 class="text-4xl font-bold text-white drop-shadow-lg">🚀 WhatsApp Bot</h1>
+    <p class="text-lg text-white">Automate your chats | Grow your business</p>
+
+    <!-- Quote -->
+    <p class="text-white text-sm mt-6 leading-snug">
+      ЄƔЄƦ ƬƦƖЄƊ. ЄƔЄƦ ƑƛƖԼЄƊ.<br>
+      ƝƠ MƛƬƬЄƦ. ƬƦƳ ƛƓƛƖƝ.<br>
+      ƑƛƖԼ ƛƓƛƖƝ. ƑƛƖԼ ƁЄƬƬЄƦ.🤍
+    </p>
+  </header>
+
+  <!-- Buttons Grid -->
+  <section class="container mx-auto px-4 text-center my-6">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-xl mx-auto">
+      <button onclick="showSection('features')" class="px-6 py-3 bg-pink-500 text-white rounded-xl font-bold shadow-lg hover:bg-pink-600">Features</button>
+      <button onclick="showSection('plans')" class="px-6 py-3 bg-yellow-400 text-gray-900 rounded-xl font-bold shadow-lg hover:bg-yellow-500">View Plans</button>
+      <button onclick="showSection('buy')" class="px-6 py-3 bg-green-500 text-white rounded-xl font-bold shadow-lg hover:bg-green-600">Buy Now</button>
+      <button onclick="showSection('about')" class="px-6 py-3 bg-blue-500 text-white rounded-xl font-bold shadow-lg hover:bg-blue-600">About</button>
+      <button onclick="showSection('trial')" class="px-6 py-3 bg-purple-500 text-white rounded-xl font-bold shadow-lg hover:bg-purple-600">Trial Bot</button>
+    </div>
+  </section>
+
+  <!-- Sections -->
+
+  <!-- Features -->
+  <section id="features" class="container mx-auto px-4 text-center my-10 hidden-section">
+    <h2 class="text-2xl font-bold mb-6 text-white">🔥 Features</h2>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-xl mx-auto">
+      <li class="bg-white p-4 rounded-2xl shadow card">➤ ① Auto View Status 👁️</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ② See Deleted Messages 🗑️</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ③ Download Songs 🎧</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ④ Save View-Once Images 🖼️</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ⑤ Play Games 🎮</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ⑥ Always Online 🌐</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ⑧ Auto Like, Save Status ❤️‍🔥</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ⑨ AI Features ⚙️</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ⑩ ChatGPT Built-In 🧠</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ⑪ Blue Ticks on Messages ✅</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ⑫ Auto React On Messages 💬</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ⑬ Download Videos (IG, FB, YT) 📽️</li>
+    <li class="bg-white p-4 rounded-2xl shadow card">➤ ⑭ Create Images with Text & 250+ 🎨</li>
+    </ul>
+  </section>
+
+  <!-- Pricing -->
+  <section id="plans" class="container mx-auto px-4 text-center my-10 hidden-section">
+    <h2 class="text-2xl font-bold mb-6 text-white">💰 Pricing Plans</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow card">
+        <h3 class="font-bold text-xl mb-2">7 Days</h3>
+        <p class="text-gray-600 mb-4">₹75 only</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow card">
+        <h3 class="font-bold text-xl mb-2">1 Month</h3>
+        <p class="text-gray-600 mb-4">₹150 only</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow card">
+        <h3 class="font-bold text-xl mb-2">Permanent</h3>
+        <p class="text-gray-600 mb-4">₹200 only</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buy Now -->
+  <section id="buy" class="container mx-auto px-4 text-center my-10 hidden-section">
+    <h2 class="text-2xl font-bold mb-6 text-white">🛒 Buy Bot</h2>
+    <button onclick="openForm()" class="px-6 py-3 bg-green-500 text-white rounded-full font-bold shadow-lg hover:bg-green-600 animate-pulse">Buy Now</button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container mx-auto px-4 text-center my-10 hidden-section">
+    <h2 class="text-2xl font-bold mb-6 text-white">ℹ️ About WhatsApp Bot</h2>
+    <div class="bg-white p-6 rounded-2xl shadow max-w-2xl mx-auto">
+      <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="About Image"
+           class="w-32 mx-auto mb-4 rounded-xl">
+      <p>
+        This WhatsApp Bot helps you automate chats, send instant replies, and boost your business. 
+        It works 24/7, supports custom messages, and ensures you never miss a lead.
+      </p>
+    </div>
+  </section>
+
+  <!-- Trial -->
+  <section id="trial" class="container mx-auto px-4 text-center my-10 hidden-section">
+    <h2 class="text-2xl font-bold mb-6 text-white">🎯 Trial Bot</h2>
+    <p class="bg-white p-6 rounded-2xl shadow max-w-xl mx-auto">
+      Try our WhatsApp Bot demo for free before purchasing. Limited features available. 🗨️massegeMe +917389637366 Or 📞Call +916260273863
+    </p>
+  </section>
+
+  <!-- Form Modal -->
+  <div id="formModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div class="bg-white p-6 rounded-2xl w-80 relative">
+      <button onclick="closeForm()" class="absolute top-2 right-3 text-xl">&times;</button>
+      <h2 class="text-xl font-bold mb-4">Fill Details</h2>
+      <form id="orderForm" class="space-y-4">
+        <input type="text" id="number" placeholder="WhatsApp Number with Country Code" class="w-full p-2 border rounded" required>
+        <input type="text" id="name" placeholder="Your Name" class="w-full p-2 border rounded" required>
+        <select id="plan" class="w-full p-2 border rounded" required>
+          <option value="">Select Plan</option>
+          <option value="7 Days - ₹75">7 Days - ₹75</option>
+          <option value="1 Month - ₹150">1 Month - ₹150</option>
+          <option value="Permanent - ₹200">Permanent - ₹200</option>
+        </select>
+        <button type="submit" class="w-full py-2 bg-green-500 text-white rounded font-bold">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div class="bg-white p-6 rounded-2xl w-80 relative">
+      <button onclick="closeContact()" class="absolute top-2 right-3 text-xl">&times;</button>
+      <h2 class="text-xl font-bold mb-4">Contact Info</h2>
+      <p class="mb-2">📧 Email: <a href="mailto:your-email@example.com" class="text-blue-500 hover:underline">kumaruikeshubham@gmail.com</a></p>
+      <p class="mb-2">📞 WhatsApp: <a href="https://wa.me/91738963736" target="_blank" class="text-green-500 hover:underline">+91 738963736</a></p>
+      <p>📱 Call: <a href="tel:+91738963736" class="text-blue-500 hover:underline">+916260273863</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+    <p class="mb-2">
+      <span onclick="openContact()" class="cursor-pointer text-green-400 font-bold hover:underline">📩 Contact Us</span> | 
+      Follow me on Instagram
+    </p>
+    <a href="https://instagram.com/msr_shubham_k" target="_blank" class="text-pink-400 font-bold hover:underline">
+      @msr_shubham_k
+    </a>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('section').forEach(sec => {
+        if (sec.id) sec.classList.add('hidden-section');
+      });
+      document.getElementById(id).classList.remove('hidden-section');
+      document.getElementById(id).scrollIntoView({behavior: 'smooth'});
+    }
+
+    function openForm() {
+      document.getElementById("formModal").classList.remove("hidden");
+    }
+    function closeForm() {
+      document.getElementById("formModal").classList.add("hidden");
+    }
+
+    document.getElementById("orderForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      let number = document.getElementById("number").value;
+      let name = document.getElementById("name").value;
+      let plan = document.getElementById("plan").value;
+
+      let message = `Hello! I want to buy your WhatsApp Bot.%0A%0A📞 Number: ${number}%0A👤 Name: ${name}%0A💳 Plan: ${plan}`;
+      window.open(`https://wa.me/91738963736?text=${message}`, "_blank");
+    });
+
+    // Contact Modal Functions
+    function openContact() {
+      document.getElementById("contactModal").classList.remove("hidden");
+    }
+    function closeContact() {
+      document.getElementById("contactModal").classList.add("hidden");
+    }
+  </script>
+
+</body>
+</html>
